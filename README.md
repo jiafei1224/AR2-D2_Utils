@@ -4,6 +4,14 @@
 
 ![ezgif com-video-to-gif (8)](https://github.com/jiafei1224/AR2-D2_Utils/assets/51585075/a3d72d1f-460e-4a2e-a679-522c14054e31)
 
+## Real-world demonstrations data
+
+#### 1. Fine-tuning real-world demonstrations data
+[Here](https://drive.google.com/drive/folders/1t2bC_YwfIEP5GwpbV0-G6WXuTrtzJjwG?usp=sharing) contains the fine-tuning real-world demonstrations collected via [PerAct](https://peract.github.io/) demonstration collection interface.
+
+#### 2. Real-world demonstrations data for all tasks
+[Here](https://drive.google.com/drive/folders/1a1_kX2KR5jehT2j1J-Lb-k_GuhOtPWg7?usp=sharing) contains the real-world demonstrations for all the nine tasks describle in the paper. This is for evaluating baseline perform on real-world collected data.
+
 ## Process 2D robot data
 It is created using **RGB video data** for training visumotor policies, using the RGB data extracted from AR2-D2 interface.
 
