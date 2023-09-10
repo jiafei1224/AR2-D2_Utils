@@ -56,3 +56,13 @@ python test.py --model e2fgvi (or e2fgvi_hq) --video <PATH_TO_RGB_VIDEO> --mask 
 
 ```
 
+## Process 3D robot data
+It is created using **3D Voxelized Input** for training BC such as PerAct, using the RGBD data extracted from AR2-D2 interface.
+
+#### 1. Process the RGB + Depth data
+
+```bash
+cd Process_3DData
+python process.py #Output two folder-> front_rgb and front_depth
+```
+
