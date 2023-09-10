@@ -42,9 +42,9 @@ def split_images_by_substring(src_folder, dest_folder1, dest_folder2, substring1
             print(f"Skipping file {filename} as it doesn't contain either substring.")
 
 
-src_folder = "/home/duanj1/CameraCalibration/Process_depth/0"
-dest_folder1 = "/home/duanj1/CameraCalibration/Process_depth/AR"
-dest_folder2 = "/home/duanj1/CameraCalibration/Process_depth/depth"
+src_folder = "./0"
+dest_folder1 = "./AR"
+dest_folder2 = "./depth"
 substring1 = "ARCapture"
 substring2 = "image"
 
@@ -54,8 +54,8 @@ from PIL import Image
 import os
 
 # Set input and output directories
-input_dir = '/home/duanj1/CameraCalibration/Process_depth/depth'
-output_dir = '/home/duanj1/CameraCalibration/Process_depth/pre_depth'
+input_dir = './depth'
+output_dir = './pre_depth'
 
 # Loop through images in input directory
 for filename in os.listdir(input_dir):
@@ -137,13 +137,13 @@ def rename_and_copy_images(src_folder, dest_folder):
         src_path = os.path.join(src_folder, filename)
         dest_path = os.path.join(dest_folder, new_filename)
         shutil.copy(src_path, dest_path)
-src_folder = "/home/duanj1/CameraCalibration/Process_depth/AR"
-dest_folder = "/home/duanj1/CameraCalibration/Process_depth/front_rgb"
+src_folder = "./AR"
+dest_folder = "./front_rgb"
 
 rename_resize_and_copy_images(src_folder, dest_folder)
 
-src_folder_depth = "/home/duanj1/CameraCalibration/Process_depth/pre_depth"
-dest_folder_depth = "/home/duanj1/CameraCalibration/Process_depth/front_depth"
+src_folder_depth = "./pre_depth"
+dest_folder_depth = "./front_depth"
 
 rename_and_copy_images(src_folder_depth,dest_folder_depth)
 
